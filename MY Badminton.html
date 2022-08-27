@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ms">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arima&family=Montserrat:wght@200;300&family=Nanum+Gothic&display=swap"
+    rel="stylesheet" />
+  <title>MY Badminton</title>
+  <style>
+    body {
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+
+    /*navbar style*/
+    * {
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #FFFFCC;
+      padding: 10px;
+    }
+
+    .navbar a {
+      float: left;
+      color: #336699;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 10px;
+      border-radius: 4px;
+    }
+
+    .navbar a.logo {
+      font-size: 18px;
+    }
+
+    .navbar a:hover {
+      background-color: #FF9900;
+      color: #336699;
+    }
+
+    .navbar-right {
+      float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .navbar-right {
+        float: none;
+      }
+    }
+
+    footer {
+      position: static;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #FFFFCC;
+      color: #0066CC;
+      text-align: center;
+      padding: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="MA Badminton.html" class="logo"><b>MA</b> Badminton</a>
+    <div class="navbar-right">
+      <a class="active" href="Laman Utama.html"><b>LAMAN UTAMA</b></a>
+      <a href="Sejarah.html"><b>SEJARAH</b></a>
+      <a href="Peraturan.html"><b>PERATURAN</b></a>
+      <a href="Teknik.html"><b>TEKNIK</b></a>
+      <a href="Tokoh.html"><b>TOKOH</b></a>
+      <a href="Atlet.html"><b>ATLET</b></a>
+      <a href="Jurulatih.html"><b>JURULATIH</b></a>
+      <a href="Berita.html"><b>BERITA</b></a>
+      <a href="Hubungi.html"><b>HUBUNGI</b></a>
+    </div>
+  </div>
+
+
+  <!-- Header -->
+  <header>
+    <div style="width: 100%;">
+      <img class="mySlides" src="https://drive.google.com/uc?export=view&id=1k4C-VzRif-pSZipGFWK7gBw6cK03oQ53" style="width:100%">
+      <img class="mySlides" src="https://drive.google.com/uc?export=view&id=1_QBUn7_F3p0AK9Z7_BwSl-AD0XxDv2NJ" style="width:100%">
+      <img class="mySlides" src="https://drive.google.com/uc?export=view&id=1luXHK44QyEiGT-Mb_DqdeWihmeuYqB0w" style="width:100%">
+      <img class="mySlides" src="https://drive.google.com/uc?export=view&id=1hsYOhHJsVeljSOk4WR1yvjNCXBNBx3zp" style="width:100%">
+    </div>
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 5000); 
+    }
+    </script>
+</header>
+
+  <footer>
+    <p><b>Terima kasih kerana melawat laman web kami!</b></p>
+    <a
+      href="http://mabadminton.unaux.com/MA%20Badminton/English%20Version/MA%20badminton.html"
+      >Versi Bahasa Inggeris</a
+    >
+  </footer>
+
+</body>
+
+</html>

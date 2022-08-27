@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ms">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arima&family=Montserrat:wght@200;300&family=Nanum+Gothic&display=swap"
+    rel="stylesheet" />
+  <title>MY Badminton - Teknik</title>
+  <style>
+    body {
+      font-family: 'Nanum Gothic', sans-serif;
+      color: #FFFFFF;
+    }
+
+    body::after {
+      background-image: url('https://images.pexels.com/photos/6742706/pexels-photo-6742706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
+      opacity: 0.9;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .border-bottom {
+      border-bottom-style: solid;
+      border-bottom-color: #CCCC44;
+      padding-bottom: 16px;
+    }
+
+    .lucontainer {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    /*navbar style*/
+    * {
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #FFFFCC;
+      padding: 10px;
+    }
+
+    .navbar a {
+      float: left;
+      color: #336699;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 10px;
+      border-radius: 4px;
+    }
+
+    .navbar a.logo {
+      font-size: 18px;
+    }
+
+    .navbar a:hover {
+      background-color: #FF9900;
+      color: #336699;
+    }
+
+    .navbar a.active {
+      background-color: #FF9900;
+      color: white;
+    }
+
+    .navbar-right {
+      float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .navbar-right {
+        float: none;
+      }
+    }
+
+    .content {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+
+    /*slideshow style*/
+    * {
+      box-sizing: border-box
+    }
+
+    .mySlides {
+      display: none
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /*Gambar Peralatan style*/
+    .row {
+      display: flex;
+    }
+
+    .column {
+      flex: 50%;
+      padding: 5px;
+    }
+
+    footer {
+      position: static;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #FFFFCC;
+      color: #0066cc;
+      text-align: center;
+      padding: 16px;
+    }
+  </style>
+</head>
+
+<div class="navbar">
+  <a href="MA Badminton.html" class="logo"><b>MA</b> Badminton</a>
+  <div class="navbar-right">
+    <a href="Laman Utama.html"><b>LAMAN UTAMA</b></a>
+    <a href="Sejarah.html"><b>SEJARAH</b></a>
+    <a href="Peraturan.html"><b>PERATURAN</b></a>
+    <a class="active" href="Teknik.html"><b>TEKNIK</b></a>
+    <a href="Tokoh.html"><b>TOKOH</b></a>
+    <a href="Atlet.html"><b>ATLET</b></a>
+    <a href="Jurulatih.html"><b>JURULATIH</b></a>
+    <a href="Berita.html"><b>BERITA</b></a>
+    <a href="Hubungi.html"><b>HUBUNGI</b></a>
+  </div>
+</div>
+
+
+<!-- Page content -->
+<div class="content" style="max-width:1564px">
+
+  <!-- Tentang -->
+  <div class="lucontainer">
+    <h3 class="border-bottom">Teknik</h3>
+    <h4 style="text-align: center; font-weight: bold;">Teknik Asas Memegang Raket</h4>
+    <p>Satu perkara penting yang mesti dikuasai oleh pemain badminton tunggal, iaitu bagaimana untuk memegang raket
+      dengan betul. Kerana, jika anda tidak memegang raket dengan betul, anda akan mengalami kesukaran untuk memberikan
+      perkhidmatan yang kuat kepada garis lawan.</p>
+    <p>Terdapat dua cara untuk memegang raket yang sering digunakan dalam bidang: forehand dan backhand. Kedua-dua
+      teknik ini digunakan secara bergantian, bergantung pada keadaan dan keadaan permainan. Bagi pemula, anda biasanya
+      akan diajar bagaimana untuk terlebih dahulu memandang depan dan kemudian meneruskan pukulan kilas.</p>
+    <h5>Cara:</h5>
+    <p>Pada asasnya, cengkaman diperlukan apabila mengendalikan raket harus santai dan tidak terlalu ketat. Petua mudah,
+      tahan kepala raket dengan tangan anda, kemudian perlahan-lahan meluncurkan tangan anda ke arah bawah raket
+      sehingga anda sampai ke kawasan untuk memegang raket, cari kedudukan yang paling nyaman. Kaedah ini membantu anda
+      mencari sudut yang tepat. Letakkan ibu jari dan jari telunjuk anda untuk membentuk V tajam pada pemegang raket.
+      Beri perhatian, mengelakkan membentuk huruf U-bulat. Sekiranya huruf U terbentuk, ini bermakna terdapat ralat
+      dalam cara anda memegang raket, contohnya terlalu ketat. Kami mengesyorkan agar anda memegang raket pada jari anda
+      dan bukan di telapak tangan anda. Ini penting untuk memudahkan anda apabila menyediakan perkhidmatan untuk
+      menghancurkan lawan anda.</p>
+    <div class="slideshow-container">
+
+      <div class="slide">
+        <img
+          src="https://www.badmintonbay.com/blog/wp-content/uploads/2018/07/2020-bevel-grip-badmintonbay.jpg"
+          style="width:100%" height="450">
+      </div>
+
+      <div class="slide">
+        <img src="https://i.ytimg.com/vi/Btg3QmGpw1Q/maxresdefault.jpg" style="width:100%" height="450">
+      </div>
+
+      <div class="slide">
+        <img src="http://4.bp.blogspot.com/_t69yjKETW_U/TTRf7F9BHgI/AAAAAAAAAUk/TBM_oaeaozk/s400/FGRIP1B.GIF"
+          style="width:100%" height="450">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+    <hr>
+    <h4 style="text-align: center; font-weight: bold;">Teknik Asas Perkhidmatan</h4>
+    <p>Perkhidmatan dalam badminton adalah salah satu unsur penting yang mesti dikuasai dengan baik. Pukulan
+      perkhidmatan
+      yang tepat akan memberi kelebihan kepada lawan anda.</p>
+    <p>Terdapat beberapa teknik asas perkhidmatan yang anda boleh dengan mudah belajar, termasuk:</p>
+    <ul>
+      <li>Perkhidmatan forehand rendah biasanya digunakan dalam sukan badminton tunggal, dengan bergantung pada jarak
+        yang agak rendah antara shuttlecock dan garis bersih.</li>
+      <li>Perkhidmatan forehand tinggi hampir sama dengan perkhidmatan forehand yang rendah, ia hanya memerlukan lebih
+        kuasa untuk memukul keretanya supaya ia boleh melambung tinggi dan jatuh di belakang lawan.</li>
+      <li>Perkhidmatan di belakang biasanya digunakan dalam sukan badminton dwi. Fungsinya adalah untuk menggugurkan
+        shuttlecock melalui jaring atau lawan.</li>
+      <li>Perkhidmatan smash pukulan sebenarnya sama dengan perkhidmatan yang biasa, ia hanya menggunakan ayunan tangan
+        yang sangat kuat kerana ia bertujuan untuk mengecoh lawan anda.</li>
+    </ul>
+    <hr>
+    <h4 style="text-align: center; font-weight: bold;">Teknik Asas Kaki</h4>
+    <p>Mempunyai gerakan kaki yang baik adalah penting untuk anda memahami. Kerana pergerakan kaki fleksibel ketika
+      bermain badminton akan memudahkan Anda untuk memindahkan posisi; ke hadapan, ke belakang, ke tepi, bahkan melompat
+      tinggi untuk memulihkan perkhidmatan shuttelcock kepada lawan.</p>
+    <p>Di samping itu, pergerakan kaki asas juga penting untuk mengawal keseimbangan anda dalam bidang. Kerana jika ia
+      tidak seimbang, sukar untuk mengawal pukulan lawan yang berkali-kali. Perkara yang tidak dijangka akan berlaku
+      jika anda tidak mempunyai corak pemindahan kaki kanan, seperti kecederaan.</p>
+    <div class="row">
+      <div class="column">
+        <iframe width="100%" height="360" src="https://www.youtube.com/embed/lldqxIG7IkI"
+          title="Kemahiran Asas Badminton Pergerakan Kaki #2" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="column">
+        <iframe width="100%" height="360" src="https://www.youtube.com/embed/1q1qknuCcdY"
+          title="kemahiran asas badminton Pergerakan kaki #3" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <hr>
+    <h5 style="color: red;">Perhatian: Pelajar boleh belajar tentang teknik bermain badminton berdasarkan maklumat yang
+      disediakan menggunakan peralatan utama.</h5>
+    <h5 style="text-align: center; font-weight: bold;">Peralatan Utama</h5>
+    <div class="row">
+      <div class="column">
+        <img src="https://cf.shopee.com.my/file/b3620e31ce2ff0ff8a4094fe832f464d" alt="Racket" style="width:100%"
+          height="350">
+      </div>
+      <div class="column">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREewK1HlC0z6JoRHlCy17H3-HmZ0wByK1Y1g&usqp=CAU"
+          alt="Bola" style="width:100%" height="350">
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p><b>Terima kasih kerana melawat laman web kami!</b></p>
+  <a
+    href="http://mabadminton.unaux.com/MA%20Badminton/English%20Version/MA%20badminton.html"
+    >Versi Bahasa Inggeris</a
+  >
+</footer>
+
+
+</html>

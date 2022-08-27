@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ms">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arima&family=Montserrat:wght@200;300&family=Nanum+Gothic&display=swap"
+    rel="stylesheet" />
+  <title>MY Badminton - Hubungi</title>
+    <style>
+      body {
+        font-family: "Nanum Gothic", sans-serif;
+        color: #FFFFFF;
+      }
+
+      body::after {
+      background-image: url("https://images.pexels.com/photos/6742706/pexels-photo-6742706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
+      opacity: 0.9;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+      .border-bottom {
+        border-bottom-style: solid;
+        border-bottom-color: #CCCC44;
+        padding-bottom: 16px;
+      }
+
+      /*navbar style*/
+      * {
+        box-sizing: border-box;
+      }
+
+      .navbar {
+      overflow: hidden;
+      background-color: #FFFFCC;
+      padding: 10px;
+    }
+
+    .navbar a {
+      float: left;
+      color:#336699;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 10px;
+      border-radius: 4px;
+    }
+
+    .navbar a.logo {
+      font-size: 18px;
+    }
+
+    .navbar a:hover {
+      background-color: #FF9900;
+      color: #336699;
+    }
+
+    .navbar a.active {
+      background-color: #FF9900;
+      color: white;
+    }
+
+      .navbar-right {
+        float: right;
+      }
+
+      @media screen and (max-width: 500px) {
+        .navbar a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+
+        .navbar-right {
+          float: none;
+        }
+      }
+
+      .content {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 16px;
+        padding-left: 16px;
+      }
+
+      /*borang style*/
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border:transparent;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      .hantar {
+        background-color: #54c9c9;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .hantar:hover {
+        background-color: #99CCCC;
+      }
+
+      .borang {
+        border-radius: 5px;
+        background-color:antiquewhite;
+        padding: 20px;
+      }
+
+      .hcontainer {
+        top: 15px;
+        left: 5px;
+        right: 5px;
+        padding: 23px;
+      }
+
+      footer {
+        position: static;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color:#FFFFCC;
+        color: #0066CC;
+        text-align: center;
+        padding: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <a href="MA Badminton.html" class="logo"><b>MA</b> Badminton</a>
+      <div class="navbar-right">
+        <a href="Laman Utama.html"><b>LAMAN UTAMA</b></a>
+        <a href="Sejarah.html"><b>SEJARAH</b></a>
+        <a href="Peraturan.html"><b>PERATURAN</b></a>
+        <a href="Teknik.html"><b>TEKNIK</b></a>
+        <a href="Tokoh.html"><b>TOKOH</b></a>
+        <a href="Atlet.html"><b>ATLET</b></a>
+        <a href="Jurulatih.html"><b>JURULATIH</b></a>
+        <a href="Berita.html"><b>BERITA</b></a>
+        <a class="active" href="Hubungi.html"><b>HUBUNGI</b></a>
+      </div>
+    </div>
+
+    <!-- Page content -->
+    <div class="content" style="max-width: 1564px">
+      <!-- Hubungi -->
+      <div class="hcontainer">
+        <h3 class="border-bottom">Hubungi</h3>
+        <p>
+          Anda boleh menghubungi kami jika mengemukakan pertanyaan, masalah atau
+          ingin memberi cadangan.
+        </p>
+        <p>
+          Sila hantar mesej anda menggunakan borang hubungan di bawah. Kami akan
+          semak mesej anda secepat mungkin.
+        </p>
+        <br />
+        <form
+          action="mailto:joeyyongxin@gmail.com?subject=Hubungi Kami"
+          method="post"
+          enctype="text/plain"
+          onsubmit="confirmInput()"
+        >
+          <label for="name"><b>Nama</b></label>
+          <input
+            type="text"
+            id="fname"
+            name="Nama"
+            placeholder="Nama anda..."
+            required
+          />
+          <label for="email"><b>Emel</b></label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Emel anda..."
+            name="Emel"
+            required
+          />
+          <label for="subject"><b>Subjek</b></label>
+          <textarea
+            id="subject"
+            name="Subjek"
+            placeholder="Nyatakan masalah anda..."
+            style="height: 200px"
+            required
+          ></textarea>
+          <button class="hantar">Hantar</button>
+        </form>
+        <script>
+          function confirmInput() {
+            fname = document.forms[0].fname.value;
+            alert(fname + ", mesej anda telah direkodkan.");
+          }
+        </script>
+      </div>
+    </div>
+
+    <footer>
+      <p><b>Terima kasih kerana melawat laman web kami!</b></p>
+      <a
+        href="http://mabadminton.unaux.com/MA%20Badminton/English%20Version/MA%20badminton.html"
+        >Versi Bahasa Inggeris</a
+      >
+    </footer>
+  </body>
+</html>
