@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arima&family=Montserrat:wght@200;300&family=Nanum+Gothic&display=swap"
+    rel="stylesheet" />
+  <title>MY Badminton - Athlete</title>
+  <style>
+    body {
+      font-family: "Nanum Gothic", sans-serif;
+      color: white;
+    }
+
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 40px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    body:after {
+      background-image: url("https://images.pexels.com/photos/8496267/pexels-photo-8496267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
+      opacity: 0.9;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .border-bottom {
+      border-bottom-style: solid;
+      border-bottom-color: #CCCC44;
+      padding-bottom: 16px;
+    }
+
+    /*navbar style*/
+    * {
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #FFFFCC;
+      padding: 10px;
+    }
+
+    .navbar a {
+      float: left;
+      color:#336699;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 10px;
+      border-radius: 4px;
+    }
+
+    .navbar a.logo {
+      font-size: 18px;
+    }
+
+    .navbar a:hover {
+      background-color: #FF9900;
+      color: #336699;
+    }
+
+    .navbar a.active {
+      background-color: #FF9900;
+      color: white;
+    }
+
+    .navbar-right {
+      float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .navbar-right {
+        float: none;
+      }
+    }
+
+    .content {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+
+    .lucontainer {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    footer {
+      position: static;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #FFFFCC;
+      color: #0066CC;
+      text-align: center;
+      padding: 16px;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    img {
+      height: 350px;
+      width: auto;
+      max-width: 500px;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+
+    .container {
+      padding: 16px;
+      background-color: black;
+      opacity: 0.6;
+    }
+
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: grey;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: orange;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #FFFFCC;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+<div class="navbar">
+  <a href="MY Badminton (ENG).html" class="logo"><b>MY</b> Badminton</a>
+  <div class="navbar-right">
+    <a href="Main page.html"><b>MAIN PAGE</b></a>
+    <a href="History.html"><b>HISTORY</b></a>
+    <a href="Rules.html"><b>RULES</b></a>
+    <a href="Technique.html"><b>TECHNIQUE</b></a>
+    <a href="Greats.html"><b>GREATS</b></a>
+    <a class="active" href="Athlete.html"><b>ATHLETE</b></a>
+    <a href="Coach.html"><b>COACH</b></a>
+    <a href="News.html"><b>NEWS</b></a>
+    <a href="Contact.html"><b>CONTACT</b></a>
+  </div>
+</div>
+
+
+  <!-- Page content -->
+  <div class="content" style="max-width: 1564px">
+    <div class="lucontainer">
+      <h3 class="border-bottom" style="color: white;">Athlete</h3>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src=https://i.pinimg.com/564x/90/a0/4b/90a04b3cbafc88bb47017a36dd5437db.jpg alt="LEE CHONG WEI"
+              style="width:100%">
+            <div class="container">
+              <h2>Lee Chong Wei</h2>
+              <p class="title">Singles Badminton Player</p>
+              <p>Country: Malaysia</p>
+              <p>Date of birth: 21 October 1982 </p>
+              <p>Place of birth: Bagan Serai, Perak</p>
+              <p>Height: 1.74 m </p>
+              <p>Weight: 68 kg </p>
+              <p>Active year: 2000-2019</p>
+              <p>Retirement Year: 13 June 2019</p>
+              <p>Handedness: Right</p>
+              <div style="margin: 24px 0;">
+                <a href="https://www.facebook.com/leechongweiofficial" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/leechongwei" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/leechongweiofficial/" class="fa fa-instagram"></a>
+              </div>
+              <p><a
+                  href="https://bwf.tournamentsoftware.com/player-profile/2E62073C-AD95-40BE-8364-0A2EC054A4AC"><button
+                    class="button">Find out more</button></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img
+              src="https://i.pinimg.com/564x/16/52/6f/16526f73f09acabbb82dd3b20ce33606.jpg"
+              alt="Lee Zii Jia" style="width:100%">
+            <div class="container">
+              <h2>Lee Zii Jia</h2>
+              <p class="title">Men's Singles Badminton Player</p>
+              <p>Country: Malaysia</p>
+              <p>Date of birth: 29 March 1998 </p>
+              <p>Place of birth: Alor Setar, Kedah, Malaysia</p>
+              <p>Height: 1.86 m </p>
+              <p>Weight: 78 kg </p>
+              <p>Active year: 2016-now</p>
+              <p>Handedness: Right</p>
+              <div style="margin: 24px 0;">
+                <a href="https://zh-cn.facebook.com/ziijialee/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/leeziijia" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/leeziijia/" class="fa fa-instagram"></a>
+              </div>
+              <p><a
+                  href="https://bwf.tournamentsoftware.com/player-profile/21E9EAF0-5C86-416F-A942-C3ECA088ACDC"><button
+                    class="button">Find out more</button></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img
+              src="https://i.pinimg.com/564x/e1/4e/b5/e14eb51c5498d60c6455c53b4f586878.jpg"
+              alt="Soh Wooi Yik" style="width:100%">
+            <div class="container">
+              <h2>Soh Wooi Yik</h2>
+              <p class="title">Badminton Men's Doubles Player</p>
+              <p>Country: Malaysia</p>
+              <p>Date of birth: 17 February 1998 </p>
+              <p>Place of birth: Kuala Lumpur,Malaysia</p>
+              <p>Height: 1.83 m </p>
+              <p>Weight: 73 kg </p>
+              <p>Active year: 2015-now</p>
+              <p>Handedness: Right</p>
+              <div style="margin: 24px 0;">
+                <a href="https://www.facebook.com/wooiyiksoh/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/sohwooiyik" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/sohwooiyik/" class="fa fa-instagram"></a>
+              </div>
+              <p><a
+                  href="https://bwf.tournamentsoftware.com/player-profile/9B88428D-188B-4A36-9129-EF58585DAB37"><button
+                    class="button">Find out more</button></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img
+              src="https://res.cloudinary.com/bwf/t_96_player_profile_portrait/v1627949889/assets/players/thumbnail/56203"
+              alt="Aaron Chia Teng Fong" style="width:100%">
+            <div class="container">
+              <h2>Aaron Chia Teng Fong</h2>
+              <p class="title">Badminton Men's Doubles Player</p>
+              <p>Country: Malaysia</p>
+              <p>Date of birth: 24 February 1997 </p>
+              <p>Place of birth: Batu Berendam,Melaka,Malaysia</p>
+              <p>Height: 1.69 m </p>
+              <p>Weight: - </p>
+              <p>Active year: -now</p>
+              <p>Handedness: Right</p>
+              <div style="margin: 24px 0;">
+                <a href="https://www.facebook.com/aaronchiatf" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/aaronchia24" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/aaronchiatengfong/" class="fa fa-instagram"></a>
+              </div>
+              <p><a
+                  href="https://bwf.tournamentsoftware.com/player-profile/4AA2A824-4927-418E-8670-4414838C8784"><button
+                    class="button">Find out more</button></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Yonex_IFB_2013_-_Eightfinal_-_Chan_Peng_Soon_-_Goh_Liu_Ying_%E2%80%94_Chris_Langridge_-_Heather_Olver_03.jpg"
+              alt="Goh_Liu_Ying" style="width:100%">
+            <div class="container">
+              <h2>Goh Liu Ying</h2>
+              <p class="title">Badminton Mixed Doubles/Badminton Women's Doubles</p>
+                <p>Country: Malaysia</p>
+                <p>Date of birth: 30 May 1989 </p>
+                <p>Place of birth: Alor Gajah,Melaka,Malaysia</p>
+                <p>Height: 1.62 m </p>
+                <p>Weight: 50 kg </p>
+                <p>Active year: -now</p>
+                <p>Handedness: Right</p>
+                <div style="margin: 24px 0;">
+                  <a href="https://zh-cn.facebook.com/gohliuying530" class="fa fa-facebook"></a>
+                  <a href="https://twitter.com/gohliuying" class="fa fa-twitter"></a>
+                  <a href="https://www.instagram.com/gohliuying/" class="fa fa-instagram"></a>
+                </div>
+              <p><a
+                  href="https://bwf.tournamentsoftware.com/player-profile/B75C85D0-4075-4638-8EA2-00DCFDD92F13"><button
+                    class="button">Find out more</button></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/96/Yonex_IFB_2013_-_Eightfinal_-_Chan_Peng_Soon_-_Goh_Liu_Ying_%E2%80%94_Chris_Langridge_-_Heather_Olver_37.jpg"
+              alt="Chan Peng Soon" style="width:100%">
+            <div class="container">
+              <h2>Chan Peng Soon</h2>
+              <p class="title">Badminton Mixed Doubles/Badminton Men's Doubles</p>
+                <p>Country: Malaysia</p>
+                <p>Date of birth: 27 April 1988 </p>
+                <p>Place of birth: Georgr Town,Penang,Malaysia</p>
+                <p>Height: 1.75 m </p>
+                <p>Weight: 68 kg </p>
+                <p>Active year: -now</p>
+                <p>Handedness: Right</p>
+                <div style="margin: 24px 0;">
+                  <a href="https://zh-cn.facebook.com/ChanPengSoon" class="fa fa-facebook"></a>
+                  <a href="https://twitter.com/chanpengsoon" class="fa fa-twitter"></a>
+                  <a href="https://www.instagram.com/pschan88/" class="fa fa-instagram"></a>
+                </div>
+              <p><a
+                  href="https://bwf.tournamentsoftware.com/player-profile/3E1CDEED-38B5-482D-8A60-5C07E4F39549"><button
+                    class="button">Find out more</button></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p><b>Thank you for visit our website!</b></p>
+    <a href="https://azread.github.io/MYBadminton/MY%20Badminton.html"
+    >Malay Version</a>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arima&family=Montserrat:wght@200;300&family=Nanum+Gothic&display=swap"
+    rel="stylesheet">
+  <title>MY Badminton - Technique</title>
+  <style>
+    body {
+      font-family: 'Nanum Gothic', sans-serif;
+      color: #FFFFFF;
+    }
+
+    body::after {
+      background-image: url('https://images.pexels.com/photos/6742706/pexels-photo-6742706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
+      opacity: 0.9;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .border-bottom {
+      border-bottom-style: solid;
+      border-bottom-color: #CCCC44;
+      padding-bottom: 16px;
+    }
+
+    .lucontainer {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    /*navbar style*/
+    * {
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #FFFFCC;
+      padding: 10px;
+    }
+
+    .navbar a {
+      float: left;
+      color: #336699;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 10px;
+      border-radius: 4px;
+    }
+
+    .navbar a.logo {
+      font-size: 18px;
+    }
+
+    .navbar a:hover {
+      background-color: #FF9900;
+      color: #336699;
+    }
+
+    .navbar a.active {
+      background-color: #FF9900;
+      color: white;
+    }
+
+    .navbar-right {
+      float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .navbar-right {
+        float: none;
+      }
+    }
+
+    .content {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+
+    /*slideshow style*/
+    * {
+      box-sizing: border-box
+    }
+
+    .mySlides {
+      display: none
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /*Gambar Peralatan style*/
+    .row {
+      display: flex;
+    }
+
+    .column {
+      flex: 50%;
+      padding: 5px;
+    }
+
+    footer {
+      position: static;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #FFFFCC;
+      color: #0066cc;
+      text-align: center;
+      padding: 16px;
+    }
+  </style>
+</head>
+
+ <!-- Navbar (sit on top) -->
+ <div class="navbar">
+  <a href="MY Badminton (ENG).html" class="logo"><b>MY</b> Badminton</a>
+  <div class="navbar-right">
+    <a href="Main page.html"><b>MAIN PAGE</b></a>
+    <a href="History.html"><b>HISTORY</b></a>
+    <a href="Rules.html"><b>RULES</b></a>
+    <a class="active" href="Technique.html"><b>TECHNIQUE</b></a>
+    <a href="Greats.html"><b>GREATS</b></a>
+    <a href="Athlete.html"><b>ATHLETE</b></a>
+    <a href="Coach.html"><b>COACH</b></a>
+    <a href="News.html"><b>NEWS</b></a>
+    <a href="Contact.html"><b>CONTACT</b></a>
+  </div>
+</div>
+
+
+<!-- Page content -->
+<div class="content" style="max-width:1564px">
+
+  <!-- Tentang -->
+  <div class="lucontainer">
+    <h3 class="border-bottom">Technique</h3>
+    <h4 style="text-align: center; font-weight: bold;">Basic Racket Holding Techniques</h4>
+    <p>One important thing that singles badminton players must master is how to hold the racket
+        correctly. Because, if you don't hold the racket correctly, you will have a hard time delivering
+        strong service to the opposing line.</p>
+    <p>There are two ways to hold the racket that are often used on the field: forehand and backhand. Both
+        this technique is used interchangeably, depending on the situation and the state of the game. For starters, you usually are
+        will be taught how to first look ahead and then proceed with the backhand.</p>
+    <h5><b>Way:</b></h5>
+    <h5><p>Basically, the grip needed when handling the racket should be relaxed and not too tight. Easy tips,
+        hold the racket head with your hand, then slowly slide your hand toward the bottom of the racket
+        until you reach the area to hold the racket, find the most comfortable position. This method helps you
+        find the right angle. Place your thumb and index finger to form a sharp V on the racket handle.
+        Pay attention, avoid forming a U-shaped letter. If the letter U is formed, this means there is an error
+        in the way you hold the racket, for example too tight. We recommend that you hold the racket on your fingers
+        and not in the palm of your hand. This is important to make it easier for you when providing services for
+        destroy your opponent.</p></h5>
+        <div class="slideshow-container">
+
+          <div class="slide">
+            <img
+              src="https://www.badmintonbay.com/blog/wp-content/uploads/2018/07/2020-bevel-grip-badmintonbay.jpg"
+              style="width:100%" height="450">
+          </div>
+    
+          <div class="slide">
+            <img src="https://i.ytimg.com/vi/Btg3QmGpw1Q/maxresdefault.jpg" style="width:100%" height="450">
+          </div>
+    
+          <div class="slide">
+            <img src="http://4.bp.blogspot.com/_t69yjKETW_U/TTRf7F9BHgI/AAAAAAAAAUk/TBM_oaeaozk/s400/FGRIP1B.GIF"
+              style="width:100%" height="450">
+          </div>
+    
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+    
+        </div>
+        <br>
+    
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    
+        <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+    
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+    
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+    
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+          }
+        </script>
+      
+    <hr>
+    <h4 style="text-align: center; font-weight: bold;">Basic Service Techniques</h4>
+    <p>Service in badminton is one of the important elements that must be mastered well. Hit
+        service
+        the right one will give your opponent an advantage.</p>
+    <p>There are several basic service techniques that you can easily learn, including:</p>
+    <ul>
+      <li>A low forehand serve is usually used in badminton singles, depending on the distance
+        which is relatively low between the shuttlecock and the net line.</li>
+      <li>A high forehand serve is almost the same as a low forehand serve, it just requires more
+        power to hit his car so that it can soar and fall behind the opponent.</li>
+      <li>The back serve is usually used in doubles badminton. Its function is to abort
+        shuttlecock through the net or opponent.</li>
+      <li>The smash shot service is actually the same as the regular service, it just uses a hand swing
+        which is very powerful because it aims to trick your opponent.</li>
+    </ul>
+    <hr>
+    <h4 style="text-align: center; font-weight: bold;">Basic Foot Techniques</h4>
+    <p>Having good footwork is important for you to understand. Because the leg movements are flexible when
+        playing badminton will make it easier for you to move positions; forward, backward, sideways, even jump
+        high to restore the shuttlecock serve to the opponent.</p>
+    <p>In addition, basic leg movements are also important to control your balance in the field. Because if it
+        unbalanced, it is difficult to control the opponent's shots many times. Unexpected things will happen
+        if you do not have a right leg transfer pattern, such as an injury.</p>
+        <div class="row">
+          <div class="column">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/lldqxIG7IkI"
+              title="Kemahiran Asas Badminton Pergerakan Kaki #2" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="column">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/1q1qknuCcdY"
+              title="kemahiran asas badminton Pergerakan kaki #3" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <hr>
+    <h5 style="color: red;">Attention: Students can learn about the technique of playing badminton based on the information
+        prepared using the main equipment.</h5>
+    <h5 style="text-align: center; font-weight: bold;">Main Equipment</h5>
+    <div class="row">
+      <div class="column">
+        <img src="https://cf.shopee.com.my/file/b3620e31ce2ff0ff8a4094fe832f464d" alt="Racket" style="width:100%"
+          height="350">
+      </div>
+      <div class="column">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREewK1HlC0z6JoRHlCy17H3-HmZ0wByK1Y1g&usqp=CAU"
+          alt="Bola" style="width:100%" height="350">
+      </div>
+      <div class="column">
+        <img src="https://www.sportszoneintl.com/wp-content/uploads/2020/04/Badminton-Court-Mat-scaled-e1586422109904-1-1024x765.jpg"
+          alt="Gelanggang" style="width:100%" height="350">
+      </div>
+      <div class="column">
+        <img src="https://cf.shopee.com.my/file/ca7796031b288801e97224b9def56de7"
+          alt="Kasut" style="width:100%" height="350">
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p><b>Thank you for visit our website!</b></p>
+  <a
+    href="https://azread.github.io/MYBadminton/MY%20Badminton.html"
+    >Malay Version</a
+  >
+</footer>
+
+
+</html>

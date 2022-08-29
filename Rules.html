@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arima&family=Montserrat:wght@200;300&family=Nanum+Gothic&display=swap"
+    rel="stylesheet" />
+  <title>MY Badminton - Rules</title>
+  <style>
+    body {
+      font-family: "Nanum Gothic", sans-serif;
+    }
+
+    body:after {
+      background-image: url("https://images.pexels.com/photos/9804653/pexels-photo-9804653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
+      opacity: 0.9;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .border-bottom {
+      border-bottom-style: solid;
+      border-bottom-color: #CCCC44;
+      padding-bottom: 16px;
+    }
+
+    /*navbar style*/
+    * {
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #FFFFCC;
+      padding: 10px;
+    }
+
+    .navbar a {
+      float: left;
+      color: #336699;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 10px;
+      border-radius: 4px;
+    }
+
+    .navbar a.logo {
+      font-size: 18px;
+    }
+
+    .navbar a:hover {
+      background-color: #FF9900;
+      color: #336699;
+    }
+
+    .navbar a.active {
+      background-color: #FF9900;
+      color: white;
+    }
+
+    .navbar-right {
+      float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .navbar-right {
+        float: none;
+      }
+    }
+
+    .content {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+
+    .lucontainer {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .container {
+      position: relative;
+      text-align: center;
+    }
+
+    .collapsible {
+      background-color: #CCCCCC;
+      color: black;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 19px;
+    }
+
+    .collapsible:hover {
+      background-color:#CC9966;
+    }
+
+    .collapsible:after {
+      content: "\2304";
+      color: #777;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+
+    .collapsible.active{
+      background-color:#CC9966;
+    }
+
+    .collapsible.active:after {
+      content: "\2303";
+    }
+
+    .collapcontent {
+      padding: 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+
+    footer {
+      position: static;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #FFFFCC;
+      color: #0066CC;
+      text-align: center;
+      padding: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+ <div class="navbar">
+  <a href="MY Badminton (ENG).html" class="logo"><b>MY</b> Badminton</a>
+  <div class="navbar-right">
+    <a href="Main page.html"><b>MAIN PAGE</b></a>
+    <a href="History.html"><b>HISTORY</b></a>
+    <a class="active" href="Rules.html"><b>RULES</b></a>
+    <a href="Technique.html"><b>TECHNIQUE</b></a>
+    <a href="Greats.html"><b>GREATS</b></a>
+    <a href="Athlete.html"><b>ATHLETE</b></a>
+    <a href="Coach.html"><b>COACH</b></a>
+    <a href="News.html"><b>NEWS</b></a>
+    <a href="Contact.html"><b>CONTACT</b></a>
+  </div>
+</div>
+
+  <!-- Page content -->
+  <div class="content" style="max-width: 1564px">
+    <div class="lucontainer">
+      <h3 class="border-bottom" style="color: white">Rules</h3>
+      <button type="button" class="collapsible">Introduction</button>
+      <div class="collapcontent">
+        <!--Perkenaan-->
+        <h4 style="font-weight: bold">Introduction</h4>
+        <h5>
+            The game of badminton requires a court, racket and badminton.
+            Badminton can be played with 2 or 4 players. All
+            age level layers either boys or girls can play
+            badminton. Badminton can also be played for fun
+            fill free time or competitively. There is an event
+            team and individual. In an individual event that is a single
+            men and women, men's and women's doubles and mixed doubles.
+            Thomas Uber Cup and Sudirman Cup are team events.
+            The winner can choose to initiate a serve, receive a serve or
+            choose a court square. The loser will receive the choice
+            the next one.
+        </h5>
+        <div class="container">
+          <img src="https://bwfbadminton.com/wp-content/uploads/2018/05/Shuttle-AE-2018.jpg" alt="badminton"
+            style="width: 100%" />
+        </div>
+        <br />
+        <h4 style="font-weight: bold">
+            The rules and laws of the game of badminton are set by the IBF
+        </h4>
+        <h5>
+            World Badminton Player Ranking System Player points calculation system
+            Badminton for the world ranking is divided into five disciplines namely
+            men's singles, women's singles, men's doubles, doubles
+            women's and mixed doubles. Player position status certified by
+            Badminton of World Federation (BWF).
+        </h5>
+        <div class="container">
+          <img src="https://upload.wikimedia.org/wikipedia/en/e/e3/Logo_ibf_main.jpg" alt="IBFWorldChampionship"
+            style="width: 100%" />
+        </div>
+        <p>
+            Here is the point calculation system for singles players and
+            doubles:
+        </p>
+        <p>
+          &#9733; Successfully collect points for world ranking in the tournament
+          which is accompanied.
+        </p>
+        <p>
+          &#9733; Qualifying for the Olympics and world championships as well
+          calculated based on the position of the world.
+        </p>
+        <p>
+          &#9733; Participating in world championships will earn you a lot of points
+          if you win.
+        </p>
+        <p>&#9733; Featured players are viewed through world rankings.</p>
+        <p>
+          &#9733; The sum of points for the world ranking for each player will
+          increase when they participate in two or more tournaments in
+          12 months a year.
+        </p>
+        <p>
+          &#9733; Participate in every tournament and win in that tournament
+          accompanied.
+        </p>
+      </div>
+      <!--Starting the Game-->
+      <button type="button" class="collapsible">
+        <b><h4>Basic Rules of Badminton</h4></b>
+      </button>
+      <div class="collapcontent">
+        <h4 style="font-weight: bold">Starting the Game</h4>
+        <p>
+          &#9824; The winner can choose to start serving, receive
+          serve or choose a court square.
+        </p>
+        <p>
+          &#9824; To start a game, a draw is made first
+          first. Badminton or shillings can be used in the draw.
+        </p>
+        <div class="container">
+          <img
+            src="https://m.buro247.my/images/malaysia-badminton-lee-chong-wei-2016-olympics-CR.jpg"
+            alt="Memulakan Permainan" style="width: 100%" />
+        </div>
+        <br />
+        <h4 style="font-weight: bold">Time off</h4>
+        <p>
+            Once any player or partner reaches 11 points, break
+            for 60 seconds will be given. Rest between games for two minutes
+            given when a game ends.
+        </p>
+        <div class="container">
+          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_3200/primary/dlpszfkdvj1gphqvmf9f" alt="Masa Rehat"
+            style="width: 100%" />
+        </div>
+        <br />
+        <h4 style="font-weight: bold">Point Counting System</h4>
+        <p>
+          &#9827; The point count system in a normal game is 21 rally points
+          the best of three games.
+        </p>
+        <p>
+          &#9827; Points will be awarded to whichever player wins
+          rally.
+        </p>
+        <p>
+          &#9827; A difference of 2 points is required to win. Otherwise,
+          the game continued to 29-29. First player/pair to reach
+          30 points is counted as the winner.
+        </p>
+        <p>
+          &#9827; In doubles events if the points are even the player on the right side will
+          service and vice versa.
+        </p>
+        <p>
+          &#9827; The sum of points for the world ranking for each player will
+          increase when they participate in two or more tournaments within 12 months of the year.
+        </p>
+        <p>
+          &#9827; In singles events if players get even points
+          serve is done on the right side of the player's court and vice versa.
+        </p>
+      </div>
+      <!--Service Rules-->
+      <button type="button" class="collapsible"><b><h4>Service Rules</h4></b></button>
+      <div class="collapcontent">
+        <h4 style="font-weight: bold">Re-Service</h4>
+        <p>
+          &#9828; Can't delay serving after swinging the racket
+          back.
+        </p>
+        <p>
+          &#9828; The player who serves and receives the serve does not
+          allowed to step on the court line.
+        </p>
+        <p>
+          &#9828; Both feet always touch the court floor
+          and in a constant state.
+        </p>
+        <p>
+          &#9828; The cork part of the badminton should be touched first during
+          make service
+        </p>
+        <p>
+          &#9828; Badminton must be below waist and trunk level
+          (shaft) must point down when servicing.
+        </p>
+        <p>
+          &#9828; Service is done after the recipient is ready. or
+          shillings can be used in the draw.
+        </p>
+        <br />
+        <h4 style="font-weight: bold">Re-Service (Let)</h4>
+        <div class="container">
+          <iframe width="100%" height="500" src="https://www.youtube.com/embed/kn-caUtko0k" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <p>&#9830; The recipient is not ready and does not try.</p>
+        <p>
+          &#9830; The servicer and the receiver are at fault simultaneously.
+        </p>
+        <p>&#9830; Badminton sticks to the net after passing the net.</p>
+        <p>&#9830; During the game, the cork on the badminton came off.</p>
+        <p>&#9830; Players are being harassed by the opposing coach.</p>
+        <p>
+          &#9830; The referee could not make a decision. Point counting system
+          in a normal game is 21 points rally the best of three games.
+        </p>
+      </div>
+      <!--Prohibition-->
+      <button type="button" class="collapsible">
+        <b><h4>Badminton Game Prohibition</h4></b>
+      </button>
+      <div class="collapcontent">
+        <h4 style="font-weight: bold">Ban For Players</h4>
+        <p>&#9540; Don't intentionally slow down the game.</p>
+        <p>
+          &#9540; Do not intentionally damage or modify the badminton for
+          change speed.
+        </p>
+        <p>
+          &#9540; Not stepping on the line while serving, touching the net
+          or the player touches the billboard.
+        </p>
+        <p>&#9540; Do not behave rudely.</p>
+        <p>
+          &#9540; Do not leave the court without the referee's permission.
+        </p>
+        <div class="container">
+          <iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/qotChP5WzpE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br />
+        <h4 style="font-weight: bold">In the event that it happens</h4>
+        <p>
+          &#5404; Touching the net or post with a limb, racket or
+          clothes.
+        </p>
+        <p>
+          &#5404; The racket passes over or under the net and interferes with the parties
+          opponent.
+        </p>
+        <p>
+          &#5404; Disturbing the opponent with loud shouts or using
+          hand signals.
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p><b>Thank you for visit our website!</b></p>
+    <a
+      href="https://azread.github.io/MYBadminton/MY%20Badminton.html"
+      >Malay Version</a
+    >
+  </footer>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

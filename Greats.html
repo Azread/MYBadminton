@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arima&family=Montserrat:wght@200;300&family=Nanum+Gothic&display=swap"
+    rel="stylesheet" />
+  <title>MY Badminton - Greats</title>
+  <style>
+    body {
+      font-family: "Nanum Gothic", sans-serif;
+      color: white;
+    }
+
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 40px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    body:after {
+      background-image: url("https://tse3.mm.bing.net/th?id=OIP.FYs5gr_ioc76KDqfv020oAHaEA&pid=Api&P=0");
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
+      opacity: 0.9;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .border-bottom {
+      border-bottom-style: solid;
+      border-bottom-color: #CCCC44;
+      padding-bottom: 16px;
+    }
+
+    /*navbar style*/
+    * {
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #FFFFCC;
+      padding: 10px;
+    }
+
+    .navbar a {
+      float: left;
+      color:#336699;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 10px;
+      border-radius: 4px;
+    }
+
+    .navbar a.logo {
+      font-size: 18px;
+    }
+
+    .navbar a:hover {
+      background-color: #FF9900;
+      color: #336699;
+    }
+
+    .navbar a.active {
+      background-color: #FF9900;
+      color: white;
+    }
+
+    .navbar-right {
+      float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .navbar-right {
+        float: none;
+      }
+    }
+
+    .content {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+
+    .lucontainer {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    footer {
+      position: static;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #FFFFCC;
+      color: #0066CC;
+      text-align: center;
+      padding: 16px;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    img {
+      height: 350px;
+      width: auto;
+      max-width: 500px;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+
+    .container {
+      padding: 16px;
+      background-color: black;
+      opacity: 0.6;
+    }
+
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: grey;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: orange;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #FFFFCC;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="navbar">
+    <a href="MY Badminton (ENG).html" class="logo"><b>MY</b> Badminton</a>
+    <div class="navbar-right">
+      <a href="Main page.html"><b>MAIN PAGE</b></a>
+      <a href="History.html"><b>HISTORY</b></a>
+      <a href="Rules.html"><b>RULES</b></a>
+      <a href="Technique.html"><b>TECHNIQUE</b></a>
+      <a class="active" href="Greats.html"><b>GREATS</b></a>
+      <a href="Athlete.html"><b>ATHLETE</b></a>
+      <a href="Coach.html"><b>COACH</b></a>
+      <a href="News.html"><b>NEWS</b></a>
+      <a href="Contact.html"><b>CONTACT</b></a>
+    </div>
+  </div>
+
+  <!-- Page content -->
+  <div class="content" style="max-width: 1564px">
+    <div class="lucontainer">
+      <h3 class="border-bottom" style="color: white;">Greats</h3>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src=https://assets.nst.com.my/images/articles/09misbun_1496919611.jpg alt="DATUK MISBUN SIDEK"
+              style="width:100%">
+            <div class="container">
+              <h2>Datuk (Dr.) Misbun Sidek</h2>
+              <p class="title">Former Malaysian Professional Badminton Player and Coach</p>
+              <p>Country: Malaysia</p>
+              <p>Date of birth: 17 February 1960</p>
+              <p>Place of birth: Banting, Selangor.</p>
+              <p>Height: 1.77 m </p>
+              <p>Active Year: 1978-1990</p>
+              <p>Retirement Year: 1990</p>
+              <p>Disabled hands: Right</p>
+              <div style="margin: 24px 0;">
+                <a href="https://www.facebook.com/profile.php?id=100044388040931" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/misbunsidek" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/datukmisbunsidek/" class="fa fa-instagram"></a>
+              </div>
+              <p><a
+                  href="https://ms.wikipedia.org/wiki/Misbun_Sidek#Kehidupan_peribadi"><button
+                    class="button">Find out more</button></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img
+              src="http://sportsaffairs.com.my/juaratangkis/wp-content/uploads/2019/10/legend-foo-kok-keong.jpg"
+              alt="Foo Kok Keong" style="width:100%">
+            <div class="container">
+              <h2>Foo Kok Keong</h2>
+              <p class="title">The World's Best Singles Player from the Late 1980s to the Mid-1990s</p>
+              <p>Country: Malaysia</p>
+              <p>Date of birth: 8 January 1963 </p>
+              <p>Place of birth: Alor Setar, Kedah, Malaysia</p>
+              <p>Height: 1.70 m </p>
+              <p>Weight: 65 kg </p>
+              <p>Active Year: 1982-1994</p>
+              <p>Retirement Year: 1994</p>
+              <p>Disabled hands: Right</p>
+              <div style="margin: 24px 0;">
+                <a href="https://www.facebook.com/fookokkeong123/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/mrfookokkeong/" class="fa fa-instagram"></a>
+              </div>
+              <p><a
+                  href="https://en.wikipedia.org/wiki/Foo_Kok_Keong"><button
+                    class="button">Find out more</button></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img
+              src="http://sportsaffairs.com.my/juaratangkis/wp-content/uploads/2019/10/legend-cheah-soon-kit1-683x1024.jpg"
+              alt="Cheah Soon Kit" style="width:100%">
+            <div class="container">
+              <h2>Datuk Cheah Soon Kit</h2>
+              <p class="title">Badminton Men's Doubles Player</p>
+              <p>Country: Malaysia</p>
+              <p>Date of birth: 9 January 1968 </p>
+              <p>Place of birth: Ipoh,Perak</p>
+              <p>Height: 1.80 m </p>
+              <p>Weight: 73 kg </p>
+              <p>Active Year: 1986-2000</p>
+              <p>Retirement Year: 2000</p>
+              <p>Disabled hands: Right</p>
+              <div style="margin: 24px 0;">
+                <a href="https://www.facebook.com/profile.php?id=100063750207053" class="fa fa-facebook"></a>
+              </div>
+              <p><a
+                  href="https://ms.wikipedia.org/wiki/Cheah_Soon_Kit"><button
+                    class="button">Find out more</button></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img
+              src="http://sportsaffairs.com.my/juaratangkis/wp-content/uploads/2019/10/legend-rahman-sidek-768x1152.jpg"
+              alt="Abdul Rahman Dato' Haji Mohd Sidek" style="width:100%">
+            <div class="container">
+              <h2>Abdul Rahman Dato' Haji Mohd Sidek</h2>
+              <p class="title">Men's Singles Badminton Player</p>
+              <p>Country: Malaysia</p>
+              <p>Date of birth: 14 September 1966 </p>
+              <p>Place of birth: Banting,Selangor</p>
+              <p>Height: 1.75 m  </p>
+              <p>Active Year: 1983-1993</p>
+              <p>Retirement Year: 1993</p>
+              <p>Disabled hands: Right</p>
+              <div style="margin: 24px 0;">
+                <a href="https://www.facebook.com/rahmansidek" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/rahman_sidek/" class="fa fa-instagram"></a>
+              </div>
+              <p><a
+                  href="https://ms.wikipedia.org/wiki/Rahman_Sidek"><button
+                    class="button">Find out more</button></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img
+              src="https://tse2.explicit.bing.net/th?id=OIP.XGcOgjxSlySmOxyvcfSxLQHaLG&pid=Api&P=0"
+              alt="Ong Ewe Hock" style="width:100%">
+            <div class="container">
+              <h2>Ong Ewe Hock</h2>
+              <p class="title">Men's Singles Badminton Player</p>
+                <p>Country: Malaysia</p>
+                <p>Date of birth: 14 March 1972 </p>
+                <p>Place of birth: Penang,Malaysia</p>
+                <p>Height: 1.72 m </p>
+                <p>Active Year: 1990-2004</p>
+                <p>Retirement Year: 2004</p>
+                <p>Disabled hands: Right</p>
+                <div style="margin: 24px 0;">
+                  <a href="https://www.facebook.com/ong.ewehock" class="fa fa-facebook"></a>
+                  <a href="https://www.instagram.com/ong_ewe_hock_/" class="fa fa-instagram"></a>
+                </div>
+              <p><a
+                  href="https://en.wikipedia.org/wiki/Ong_Ewe_Hock"><button
+                    class="button">Find out more</button></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img
+              src="http://sportsaffairs.com.my/juaratangkis/wp-content/uploads/2019/10/legend-roslin-hashim2-778x1024.jpg"
+              alt="Muhammad Roslin Hashim" style="width:100%">
+            <div class="container">
+              <h2>Muhammad Roslin Hashim</h2>
+              <p class="title">Men's Singles Badminton Player</p>
+                <p>Country: Malaysia</p>
+                <p>Date of birth: 23 October 1975 </p>
+                <p>Place of birth: Kota Bharu, Kelantan, Malaysia</p>
+                <p>Height: 1.75 m </p>
+                <p>Weight: 65 kg </p>
+                <p>Active Year: 1996-2009</p>
+                <p>Retirement Year: 2009</p>
+                <p>Disabled hands: Right</p>
+                <div style="margin: 24px 0;">
+                  <a href="https://www.facebook.com/profile.php?id=100053217278211" class="fa fa-facebook"></a>
+                  <a href="https://twitter.com/roslinhashim75" class="fa fa-twitter"></a>
+                  <a href="https://www.instagram.com/roslin_hashim/" class="fa fa-instagram"></a>
+                </div>
+              <p><a
+                  href="https://ms.wikipedia.org/wiki/Roslin_Hashim"><button
+                    class="button">Find out more</button></a></p>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="column">
+            <div class="card">
+              <img
+                src="https://tse1.explicit.bing.net/th?id=OIP.agH4QHfpaZiF9-ZAX1lYcwHaJa&pid=Api&P=0"
+                alt="Mohd Zakry Abdul Latif" style="width:100%">
+              <div class="container">
+                <h2>Mohd Zakry Abdul Latif</h2>
+                <p class="title">Badminton Men's Doubles Player</p>
+                  <p>Country: Malaysia</p>
+                  <p>Date of birth: 2 April 1983 </p>
+                  <p>Place of birth: Negeri Sembilan, Malaysia</p>
+                  <p>Height: 1.70 m </p>
+                  <p>Active Year: 2001-2016</p>
+                  <p>Retirement Year: 2016</p>
+                  <p>Disabled hands: Right</p>
+                  <div style="margin: 24px 0;">
+                    <a href="https://www.facebook.com/der.jahanams" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/derjahanams/" class="fa fa-instagram"></a>
+                  </div>
+                <p><a
+                    href="https://en.wikipedia.org/wiki/Mohd_Zakry_Abdul_Latif"><button
+                      class="button">Find out more</button></a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img
+                src="http://sportsaffairs.com.my/juaratangkis/wp-content/uploads/2019/10/legend-koo-kien-keat.jpg"
+                alt="Koo Kien Keat" style="width:100%">
+              <div class="container">
+                <h2>Koo Kien Keat</h2>
+                <p class="title">Badminton Men's Doubles Player</p>
+                  <p>Country: Malaysia</p>
+                  <p>Date of birth: 18 September 1985 </p>
+                  <p>Place of birth: Ipoh,Perak</p>
+                  <p>Height: 1.79 m </p>
+                  <p>Weight: 75 kg</p>
+                  <p>Active Year: 2003-2016</p>
+                  <p>Retirement Year: November 2016</p>
+                  <p>Disabled hands: Right</p>
+                  <div style="margin: 24px 0;">
+                    <a href="https://www.facebook.com/kookienkeatofficial/" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/KKKOO918" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/koo_kien_keat/" class="fa fa-instagram"></a>
+                  </div>
+                <p><a
+                    href="https://en.wikipedia.org/wiki/Koo_Kien_Keat"><button
+                      class="button">Find out more</button></a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img
+                src="http://sportsaffairs.com.my/juaratangkis/wp-content/uploads/2019/10/legend-Woon-Khe-Wei2.jpg"
+                alt="Woon Khe Wei" style="width:100%">
+              <div class="container">
+                <h2>Woon Khe Wei</h2>
+                <p class="title">Badminton Mixed Doubles/Badminton Women's Doubles</p>
+                  <p>Country: Malaysia</p>
+                  <p>Date of birth: 18 Mac 1989 </p>
+                  <p>Place of birth: Selangor,Malaysia</p>
+                  <p>Height: 1.72 m </p>
+                  <p>Weight: 60 kg</p>
+                  <p>Active Year: 2007-2018</p>
+                  <p>Retirement Year: 2018</p>
+                  <p>Disabled hands: Left</p>
+                  <div style="margin: 24px 0;">
+                    <a href="https://www.facebook.com/janicewoonkhewei" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/woonkhe" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/janicewoon/" class="fa fa-instagram"></a>
+                  </div>
+                <p><a
+                    href="https://en.wikipedia.org/wiki/Woon_Khe_Wei"><button
+                      class="button">Find out more</button></a></p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p><b>Thank you for visit our website!</b></p>
+    <a
+      href="https://azread.github.io/MYBadminton/MY%20Badminton.html"
+      >Malay Version</a
+    >
+  </footer>
+  
+  
+  </html>
