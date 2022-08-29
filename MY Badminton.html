@@ -100,35 +100,36 @@
   <!-- Header -->
   <header>
     <div style="width: 100%;">
-      <img class="mySlides" src="https://drive.google.com/uc?export=view&id=1k4C-VzRif-pSZipGFWK7gBw6cK03oQ53" style="width:100%">
-      <img class="mySlides" src="https://drive.google.com/uc?export=view&id=1_QBUn7_F3p0AK9Z7_BwSl-AD0XxDv2NJ" style="width:100%">
-      <img class="mySlides" src="https://drive.google.com/uc?export=view&id=1luXHK44QyEiGT-Mb_DqdeWihmeuYqB0w" style="width:100%">
-      <img class="mySlides" src="https://drive.google.com/uc?export=view&id=1hsYOhHJsVeljSOk4WR1yvjNCXBNBx3zp" style="width:100%">
+      <img class="mySlides" src="https://drive.google.com/uc?export=view&id=1k4C-VzRif-pSZipGFWK7gBw6cK03oQ53"
+        style="width:100%">
+      <img class="mySlides" src="https://drive.google.com/uc?export=view&id=1_QBUn7_F3p0AK9Z7_BwSl-AD0XxDv2NJ"
+        style="width:100%">
+      <img class="mySlides" src="https://drive.google.com/uc?export=view&id=1luXHK44QyEiGT-Mb_DqdeWihmeuYqB0w"
+        style="width:100%">
+      <img class="mySlides" src="https://drive.google.com/uc?export=view&id=1hsYOhHJsVeljSOk4WR1yvjNCXBNBx3zp"
+        style="width:100%">
     </div>
-<script>
-    var myIndex = 0;
-    carousel();
-    
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 5000);
       }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}    
-      x[myIndex-1].style.display = "block";  
-      setTimeout(carousel, 5000); 
-    }
     </script>
-</header>
+  </header>
 
   <footer>
     <p><b>Terima kasih kerana melawat laman web kami!</b></p>
-    <a
-      href="http://mabadminton.unaux.com/MA%20Badminton/English%20Version/MA%20badminton.html"
-      >Versi Bahasa Inggeris</a
-    >
+    <a href="https://azread.github.io/MYBadminton/MY%20Badminton%20(ENG).html">Versi Bahasa Inggeris</a>
   </footer>
 
 </body>

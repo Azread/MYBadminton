@@ -1,166 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Arima&family=Montserrat:wght@200;300&family=Nanum+Gothic&display=swap"
-    rel="stylesheet" />
-  <title>MY Badminton - Rules</title>
-  <style>
-    body {
-      font-family: "Nanum Gothic", sans-serif;
-    }
-
-    body:after {
-      background-image: url("https://images.pexels.com/photos/9804653/pexels-photo-9804653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-      background-repeat: no-repeat;
-      background-size: cover;
-      content: "";
-      opacity: 0.9;
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      z-index: -1;
-    }
-
-    .border-bottom {
-      border-bottom-style: solid;
-      border-bottom-color: #CCCC44;
-      padding-bottom: 16px;
-    }
-
-    /*navbar style*/
-    * {
-      box-sizing: border-box;
-    }
-
-    .navbar {
-      overflow: hidden;
-      background-color: #FFFFCC;
-      padding: 10px;
-    }
-
-    .navbar a {
-      float: left;
-      color: #336699;
-      text-align: center;
-      padding: 12px;
-      text-decoration: none;
-      font-size: 18px;
-      line-height: 10px;
-      border-radius: 4px;
-    }
-
-    .navbar a.logo {
-      font-size: 18px;
-    }
-
-    .navbar a:hover {
-      background-color: #FF9900;
-      color: #336699;
-    }
-
-    .navbar a.active {
-      background-color: #FF9900;
-      color: white;
-    }
-
-    .navbar-right {
-      float: right;
-    }
-
-    @media screen and (max-width: 500px) {
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima&family=Montserrat:wght@200;300&family=Nanum+Gothic&display=swap"
+      rel="stylesheet" />
+    <title>MY Badminton - Rules</title>
+    <style>
+      body {
+        font-family: "Nanum Gothic", sans-serif;
+      }
+  
+      body:after {
+        background-image: url("https://images.pexels.com/photos/9804653/pexels-photo-9804653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
+        opacity: 0.9;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: -1;
+      }
+  
+      .border-bottom {
+        border-bottom-style: solid;
+        border-bottom-color: #CCCC44;
+        padding-bottom: 16px;
+      }
+  
+      /*navbar style*/
+      * {
+        box-sizing: border-box;
+      }
+  
+      .navbar {
+        overflow: hidden;
+        background-color: #FFFFCC;
+        padding: 10px;
+      }
+  
       .navbar a {
-        float: none;
-        display: block;
-        text-align: left;
+        float: left;
+        color: #336699;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 10px;
+        border-radius: 4px;
       }
-
+  
+      .navbar a.logo {
+        font-size: 18px;
+      }
+  
+      .navbar a:hover {
+        background-color: #FF9900;
+        color: #336699;
+      }
+  
+      .navbar a.active {
+        background-color: #FF9900;
+        color: white;
+      }
+  
       .navbar-right {
-        float: none;
+        float: right;
       }
-    }
-
-    .content {
-      padding-top: 8px;
-      padding-bottom: 8px;
-      padding-right: 16px;
-      padding-left: 16px;
-    }
-
-    .lucontainer {
-      padding-top: 32px;
-      padding-bottom: 32px;
-      padding-left: 16px;
-      padding-right: 16px;
-    }
-
-    .container {
-      position: relative;
-      text-align: center;
-    }
-
-    .collapsible {
-      background-color: #CCCCCC;
-      color: black;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 19px;
-    }
-
-    .collapsible:hover {
-      background-color:#CC9966;
-    }
-
-    .collapsible:after {
-      content: "\2304";
-      color: #777;
-      font-weight: bold;
-      float: right;
-      margin-left: 5px;
-    }
-
-    .collapsible.active{
-      background-color:#CC9966;
-    }
-
-    .collapsible.active:after {
-      content: "\2303";
-    }
-
-    .collapcontent {
-      padding: 18px;
-      display: none;
-      overflow: hidden;
-      background-color: #f1f1f1;
-    }
-
-    footer {
-      position: static;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: #FFFFCC;
-      color: #0066CC;
-      text-align: center;
-      padding: 16px;
-    }
-  </style>
-</head>
-
-<body>
+  
+      @media screen and (max-width: 500px) {
+        .navbar a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+  
+        .navbar-right {
+          float: none;
+        }
+      }
+  
+      .content {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 16px;
+        padding-left: 16px;
+      }
+  
+      .lucontainer {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+  
+      .container {
+        position: relative;
+        text-align: center;
+      }
+  
+      .collapsible {
+        background-color: #CCCCCC;
+        color: black;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 19px;
+      }
+  
+      .collapsible:hover {
+        background-color:#CC9966;
+      }
+  
+      .collapsible:after {
+        content: "\2304";
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+  
+      .collapsible.active{
+        background-color:#CC9966;
+      }
+  
+      .collapsible.active:after {
+        content: "\2303";
+      }
+  
+      .collapcontent {
+        padding: 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+      }
+  
+      footer {
+        position: static;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #FFFFCC;
+        color: #0066CC;
+        text-align: center;
+        padding: 16px;
+      }
+    </style>
+  </head>
+  
+  <body>
 
   <!-- Navbar (sit on top) -->
  <div class="navbar">
@@ -247,7 +249,7 @@
       </div>
       <!--Starting the Game-->
       <button type="button" class="collapsible">
-        <b><h4>Basic Rules of Badminton</h4></b>
+        Basic Rules of Badminton
       </button>
       <div class="collapcontent">
         <h4 style="font-weight: bold">Starting the Game</h4>
@@ -304,7 +306,7 @@
         </p>
       </div>
       <!--Service Rules-->
-      <button type="button" class="collapsible"><b><h4>Service Rules</h4></b></button>
+      <button type="button" class="collapsible">Service Rules</button>
       <div class="collapcontent">
         <h4 style="font-weight: bold">Re-Service</h4>
         <p>
@@ -353,7 +355,7 @@
       </div>
       <!--Prohibition-->
       <button type="button" class="collapsible">
-        <b><h4>Badminton Game Prohibition</h4></b>
+        Badminton Game Prohibition
       </button>
       <div class="collapcontent">
         <h4 style="font-weight: bold">Ban For Players</h4>
