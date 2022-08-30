@@ -14,38 +14,38 @@
     href="https://fonts.googleapis.com/css2?family=Arima&family=Montserrat:wght@200;300&family=Nanum+Gothic&display=swap"
     rel="stylesheet" />
   <title>MY Badminton - Sejarah</title>
-    <style>
-      body {
-        font-family: "Nanum Gothic", sans-serif;
-        color: #FFFFFF;
-      }
+  <style>
+    body {
+      font-family: "Nanum Gothic", sans-serif;
+      color: #FFFFFF;
+    }
 
-      body:after {
-        background-image: url("https://i.pinimg.com/736x/91/74/10/917410946ed00961e793dd28622dc84b.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        content: "";
-        opacity: 0.9;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        z-index: -1;
-      }
+    body:after {
+      background-image: url("https://i.pinimg.com/736x/91/74/10/917410946ed00961e793dd28622dc84b.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
+      opacity: 0.9;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: -1;
+    }
 
-      .border-bottom {
-        border-bottom-style: solid;
-        border-bottom-color: #CCCC44;
-        padding-bottom: 16px;
-      }
+    .border-bottom {
+      border-bottom-style: solid;
+      border-bottom-color: #CCCC44;
+      padding-bottom: 16px;
+    }
 
-      /*navbar style*/
-      * {
-        box-sizing: border-box;
-      }
+    /*navbar style*/
+    * {
+      box-sizing: border-box;
+    }
 
-      .navbar {
+    .navbar {
       overflow: hidden;
       background-color: #FFFFCC;
       padding: 10px;
@@ -76,122 +76,284 @@
       color: white;
     }
 
+    .navbar-right {
+      float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
       .navbar-right {
-        float: right;
+        float: none;
       }
+    }
 
-      @media screen and (max-width: 500px) {
-        .navbar a {
-          float: none;
-          display: block;
-          text-align: left;
-        }
+    .content {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
 
-        .navbar-right {
-          float: none;
-        }
-      }
+    .lucontainer {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
 
-      .content {
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-right: 16px;
-        padding-left: 16px;
-      }
+    #timeline {
+      display: flex;
+      background-color: #031625;
+    }
 
-      .lucontainer {
-        padding-top: 32px;
-        padding-bottom: 32px;
-        padding-left: 16px;
-        padding-right: 16px;
-      }
+    #timeline:hover .tl-item {
+      width: 23.3333%;
+    }
 
-      footer {
-        position: static;
-        left: 0;
-        bottom: 0;
+    .tl-item {
+      transform: translate3d(0, 0, 0);
+      position: relative;
+      width: 40%;
+      height: 100vh;
+      min-height: 600px;
+      color: #fff;
+      overflow: hidden;
+      transition: width 0.5s ease;
+    }
+
+    .tl-item:before,
+    .tl-item:after {
+      transform: translate3d(0, 0, 0);
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .tl-item:after {
+      background: rgba(3, 22, 37, 0.85);
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+
+    .tl-item:before {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 75%);
+      z-index: 1;
+      opacity: 0;
+      transform: translate3d(0, 0, 0) translateY(50%);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .tl-item:hover {
+      width: 40% !important;
+    }
+
+    .tl-item:hover:after {
+      opacity: 0;
+    }
+
+    .tl-item:hover:before {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) translateY(0);
+      transition: opacity 1s ease, transform 1s ease 0.25s;
+    }
+
+    .tl-item:hover .tl-content {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 0.75s ease 0.5s;
+    }
+
+    .tl-item:hover .tl-bg {
+      filter: grayscale(0);
+    }
+
+    .tl-content {
+      transform: translate3d(0, 0, 0) translateY(25px);
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      margin: 0 1.618em;
+      top: 30%;
+      opacity: 0;
+    }
+
+    .tl-content h1 {
+      text-transform: uppercase;
+      color: #1779cf;
+      font-size: 1.44rem;
+      font-weight: normal;
+    }
+
+    .tl-year {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 1;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+    }
+
+    .tl-year p {
+      font-size: 1.728rem;
+    }
+
+    .tl-bg {
+      transform: translate3d(0, 0, 0);
+      position: absolute;
+      width: 80%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-size: cover;
+      background-position: center;
+      transition: filter 0.5s ease;
+      filter: grayscale(100%);
+    }
+
+    @media screen and (max-width: 800px) {
+
+      #timeline,.tl-bg,.tl-item,.tl-content,.tl-year {
         width: 100%;
-        background-color: #FFFFCC;
-        color: #0066CC;
-        text-align: center;
-        padding: 16px;
+        padding: 0;
       }
-    </style>
-  </head>
-  <body>
+    }
 
-    <div class="navbar">
-      <a href="MY Badminton.html" class="logo"><b>MY</b> Badminton</a>
-      <div class="navbar-right">
-        <a href="Laman Utama.html"><b>LAMAN UTAMA</b></a>
-        <a class="active" href="Sejarah.html"><b>SEJARAH</b></a>
-        <a href="Peraturan.html"><b>PERATURAN</b></a>
-        <a href="Teknik.html"><b>TEKNIK</b></a>
-        <a href="Tokoh.html"><b>TOKOH</b></a>
-        <a href="Atlet.html"><b>ATLET</b></a>
-        <a href="Jurulatih.html"><b>JURULATIH</b></a>
-        <a href="Berita.html"><b>BERITA</b></a>
-        <a href="Hubungi.html"><b>HUBUNGI</b></a>
-      </div>
+    footer {
+      position: static;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #FFFFCC;
+      color: #0066CC;
+      text-align: center;
+      padding: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="MY Badminton.html" class="logo"><b>MY</b> Badminton</a>
+    <div class="navbar-right">
+      <a href="Laman Utama.html"><b>LAMAN UTAMA</b></a>
+      <a class="active" href="Sejarah.html"><b>SEJARAH</b></a>
+      <a href="Peraturan.html"><b>PERATURAN</b></a>
+      <a href="Teknik.html"><b>TEKNIK</b></a>
+      <a href="Tokoh.html"><b>TOKOH</b></a>
+      <a href="Atlet.html"><b>ATLET</b></a>
+      <a href="Jurulatih.html"><b>JURULATIH</b></a>
+      <a href="Berita.html"><b>BERITA</b></a>
+      <a href="Hubungi.html"><b>HUBUNGI</b></a>
     </div>
+  </div>
 
-    <!-- Page content -->
-    <div class="content" style="max-width: 1564px">
-      <div class="lucontainer">
-        <h3 class="border-bottom">Sejarah</h3>
-        <p>
-          Pendahulu badminton ialah kriket (tetapi kini badminton dan kriket
-          telah berkembang menjadi dua sukan bola yang berbeza), iaitu
-          menggunakan papan kayu untuk memukul bola berbulu (serupa dengan bulu
-          tangkis), dan biarkan ia mengelak permainan. Dengan sejarah hampir
-          2000 tahun, ia boleh dilihat di Eropah purba, China dan Jepun.
-          Antaranya, sejenis papan badminton berasal dari Greece purba, dan ia
-          dibangunkan untuk menukar raket kayu pepejal menjadi bingkai kayu, dan
-          mengikat kulit biri-biri yang ketat di tengah, yang lebih mudah untuk
-          dipukul kerana keanjalannya. Permainan ini merebak ke timur ke India
-          purba dan sejauh Siam, China dan Jepun. Walau bagaimanapun, tujuan
-          permainan ini adalah untuk mengekalkan bola di udara sebanyak mungkin
-          tanpa mendarat, yang sangat berbeza dengan semangat badminton moden.
-        </p>
-        <p>
-          Pada pertengahan abad ke-19, badminton moden muncul di Pune, barat
-          India, yang dipanggil dengan nama tempat "Poona" pada masa itu. Kerana
-          British tempatan menyukai sukan baru ini, mereka membawanya kembali ke
-          tanah besar British. Pada tahun 1873, satu persembahan awam telah
-          diadakan di Badminton Manor di Gloucestershire, England, yang menarik
-          perhatian ramai orang dan secara beransur-ansur tersebar. Kemudian,
-          orang ramai memanggil sukan itu dengan nama manor pertunjukan itu,
-          "Badminton".Namun, di kawasan berbahasa Cina, nama ini tidak
-          dipopularkan, dan ia dipanggil "Badminton" mengikut peralatan.
-        </p>
-        <p>
-          Badminton British awal masih menggunakan peraturan tidak bertulis dari
-          India, tetapi ia sering menjadi kontroversi kerana tidak cukup ketat.
-          Pada tahun 1887, "Bath Badminton Club" meneliti dan menambah baik, dan
-          menyelesaikan peraturan badminton bertulis pertama. Pada tahun 1893,
-          Persatuan Badminton Inggeris telah ditubuhkan untuk menyemak semula
-          dan menyatukan peraturan permainan badminton. Pada tahun 1898, Terbuka
-          Guilford, dianggap sebagai pertandingan terbuka rasmi pertama
-          badminton, telah berjaya diadakan di Guildford, Surrey, England, dan
-          membawa kepada badminton terbuka yang paling lama berlangsung, Terbuka
-          Seluruh England, yang diadakan pada 4 April.
-        </p>
-        <p>
-          Pada tahun 1934, pertubuhan badminton pertama di seluruh dunia,
-          Persekutuan Badminton Antarabangsa (IBF), telah ditubuhkan di United
-          Kingdom. Pada tahun 1981, ia bergabung dengan Persekutuan Badminton
-          Dunia (WBF), yang ditubuhkan pada tahun 1978, dan namanya masih
-          Persekutuan Badminton Antarabangsa. Pada 24 September 2006,
-          Persekutuan Badminton Antarabangsa telah menukar namanya kepada
-          Persekutuan Badminton Dunia (BWF). Kini terdapat 159 negara atau
-          wilayah ahli.
-        </p>
-      </div>
+  <!-- Page content -->
+  <div class="content" style="max-width: 2000px">
+    <div class="lucontainer">
+      <section id="timeline">
+
+        <div class="tl-item">
+
+          <div class="tl-bg"
+            style="background-image: url(https://i.pinimg.com/564x/84/2b/9f/842b9f4184e27af74ef71b07edea1d2b.jpg)">
+          </div>
+
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif">Perkenaan Badminton</p>
+          </div>
+
+          <div class="tl-content">
+            <h1>*Perkenaan*</h1>
+            <p>Badminton ialah sukan yang menggunakan raket dan badminton, dimainkan oleh dua pemain lawan
+              (perseorangan) atau dua pemain lawan (beregu), di mana pemain diletakkan bertentangan antara satu sama
+              lain dalam padang segi empat tepat yang dipisahkan oleh jaring.
+              Pemain boleh menggunakan raket mereka untuk mengutip mata dengan memukul bola badminton supaya ia boleh
+              melepasi jaring dan mendarat di kawasan lawan.
+              Pukulan berhenti selepas bulu tangkis mendarat, dan bulu tangkis hanya boleh memukul sekali pada setiap
+              sisi sebelum melepasi jaring.</p>
+          </div>
+
+        </div>
+
+        <div class="tl-item">
+
+          <div class="tl-bg"
+            style="background-image: url(https://i.pinimg.com/564x/e1/3c/50/e13c505de94bc4346eef32b92524b1d9.jpg)">
+          </div>
+
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif">Abad ke-16</p>
+          </div>
+
+          <div class="tl-content">
+            <h1 class="f3 text--accent ttu">*Abad ke-16*</h1>
+            <p>Badminton telah diperkenalkan pada zaman silam; sukan ini mula dimainkan di Yunani silam dan Mesir.
+              Di Jepun, sukan berkaitan iaitu Hanetsuki telah dimainkan seawal abad ke-16.
+              Di kawasan barat, badminton muncul daripada sebuah sukan yang dipanggil battledore and shuttlecock,
+              yang mana dua atau lebih pemain memukul bulu tangkis di udara menggunakan raket kecil. </p>
+          </div>
+        </div>
+        <div class="tl-item">
+
+          <div class="tl-bg"
+            style="background-image: url(https://i.pinimg.com/564x/72/95/21/72952152d05e0afe7cf659f2d948b91b.jpg)">
+          </div>
+
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif">Abad ke-18</p>
+          </div>
+          <div class="tl-content">
+            <h1 class="f3 text--accent ttu">*Abad ke-18*</h1>
+            <p>Badminton dikenali sebagai "Poona" di India semasa abad ke-18, dan pegawai tentera British
+              mengaplikasikan versi India semasa kembali ke England pada 1860an, yang mana ia dimainkan di rumah
+              kediaman kebangsaan seperti kediaman kelas atasan.
+              Isaac Spratt, penjual anak patung London, menerbitkan sebuah risalah iaitu, "Badminton Battledore - a new
+              game" pada 1860, tetapi malangnya tiada cetakan dilakukan.
+            <p>Sukan baru ini diperkenalkan pada 1873 di Badminton House, Gloucestershire, yang dimiliki oleh Duke of
+              Beaufort. Pada waktu itu, sukan itu merujuk kepada "The Game of Badminton," dan, nama rasmi sukan ini
+              kemudian menjadi Badminton.</p>
+          </div>
+        </div>
+
+        <div class="tl-item">
+
+          <div class="tl-bg"
+            style="background-image: url(https://i.pinimg.com/564x/eb/b5/f9/ebb5f9d27f37b7299dda0367d6082cbd.jpg)">
+          </div>
+
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif">Abad ke-19</p>
+          </div>
+
+          <div class="tl-content">
+            <h1 class="f3 text--accent ttu">*Abad ke-19*</h1>
+            <p>Pertubuhan Badminton Antarabangsa (IBF) (kini dikenali sebagai Persekutuan Badminton Dunia) yang telah
+              ditubuhkan pada 1934 yang dianggotai Kanada, Denmark, England, Perancis, Belanda, Ireland, New Zealand,
+              Scotland, dan Wales sebagai anggota pengasas.
+              India menyertai pertubuhan ini pada 1936.</p>
+            <p>Pada 24 September 2006, Persekutuan Badminton Antarabangsa telah menukar namanya kepada Persekutuan
+              Badminton Dunia (BWF).
+              Kini terdapat 159 negara atau wilayah ahli.</p>
+          </div>
+        </div>
     </div>
+  </div>
+  </section>
 
-    <footer>
-      <p><b>Terima kasih kerana melawat laman web kami!</b></p>
-      <a href="https://azread.github.io/MYBadminton/MY%20Badminton%20(ENG).html">Versi Bahasa Inggeris</a>
+  <footer>
+    <p><b>Terima kasih kerana melawat laman web kami!</b></p>
+    <a href="https://azread.github.io/MYBadminton/MY%20Badminton%20(ENG).html">Versi Bahasa Inggeris</a>
   </footer>
-  </body>
+</body>
+
 </html>
