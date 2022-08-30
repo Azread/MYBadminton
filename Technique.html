@@ -187,8 +187,8 @@
   </style>
 </head>
 
- <!-- Navbar (sit on top) -->
- <div class="navbar">
+<!-- Navbar (sit on top) -->
+<div class="navbar">
   <a href="MY Badminton (ENG).html" class="logo"><b>MY</b> Badminton</a>
   <div class="navbar-right">
     <a href="Main page.html"><b>MAIN PAGE</b></a>
@@ -212,83 +212,86 @@
     <h3 class="border-bottom">Technique</h3>
     <h4 style="text-align: center; font-weight: bold;">Basic Racket Holding Techniques</h4>
     <p>One important thing that singles badminton players must master is how to hold the racket
-        correctly. Because, if you don't hold the racket correctly, you will have a hard time delivering
-        strong service to the opposing line.</p>
+      correctly. Because, if you don't hold the racket correctly, you will have a hard time delivering
+      strong service to the opposing line.</p>
     <p>There are two ways to hold the racket that are often used on the field: forehand and backhand. Both
-        this technique is used interchangeably, depending on the situation and the state of the game. For starters, you usually are
-        will be taught how to first look ahead and then proceed with the backhand.</p>
+      this technique is used interchangeably, depending on the situation and the state of the game. For starters, you
+      usually are
+      will be taught how to first look ahead and then proceed with the backhand.</p>
     <h5><b>Way:</b></h5>
-    <h5><p>Basically, the grip needed when handling the racket should be relaxed and not too tight. Easy tips,
+    <h5>
+      <p>Basically, the grip needed when handling the racket should be relaxed and not too tight. Easy tips,
         hold the racket head with your hand, then slowly slide your hand toward the bottom of the racket
         until you reach the area to hold the racket, find the most comfortable position. This method helps you
         find the right angle. Place your thumb and index finger to form a sharp V on the racket handle.
         Pay attention, avoid forming a U-shaped letter. If the letter U is formed, this means there is an error
         in the way you hold the racket, for example too tight. We recommend that you hold the racket on your fingers
         and not in the palm of your hand. This is important to make it easier for you when providing services for
-        destroy your opponent.</p></h5>
-        <div class="slideshow-container">
+        destroy your opponent.</p>
+    </h5>
+    <div class="slideshow-container">
 
-          <div class="slide">
-            <img
-              src="https://www.badmintonbay.com/blog/wp-content/uploads/2018/07/2020-bevel-grip-badmintonbay.jpg"
-              style="width:100%" height="450">
-          </div>
-    
-          <div class="slide">
-            <img src="https://i.ytimg.com/vi/Btg3QmGpw1Q/maxresdefault.jpg" style="width:100%" height="450">
-          </div>
-    
-          <div class="slide">
-            <img src="http://4.bp.blogspot.com/_t69yjKETW_U/TTRf7F9BHgI/AAAAAAAAAUk/TBM_oaeaozk/s400/FGRIP1B.GIF"
-              style="width:100%" height="450">
-          </div>
-    
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
-    
-        </div>
-        <br>
-    
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-    
-        <script>
-          let slideIndex = 1;
-          showSlides(slideIndex);
-    
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
-    
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
-    
-          function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slide");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-          }
-        </script>
-      
+      <div class="slide">
+        <img
+          src="https://sahabatnesia.com/wp-content/uploads/2019/02/Cara-Memegang-Raket-Forehand-Grip-700x523.jpg"
+          style="width:100%" height="450">
+      </div>
+
+      <div class="slide">
+        <img src="https://s1.bukalapak.com/bukalapak-kontenz-production/content_attachments/31626/w-744/new_backhand_grip_2.jpg" style="width:100%" height="450">
+      </div>
+
+      <div class="slide">
+        <img src="http://badmintonbellaaina.weebly.com/uploads/1/6/7/5/16752638/579482_orig.jpg"
+          style="width:100%" height="450">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
     <hr>
     <h4 style="text-align: center; font-weight: bold;">Basic Service Techniques</h4>
     <p>Service in badminton is one of the important elements that must be mastered well. Hit
-        service
-        the right one will give your opponent an advantage.</p>
+      service
+      the right one will give your opponent an advantage.</p>
     <p>There are several basic service techniques that you can easily learn, including:</p>
     <ul>
       <li>A low forehand serve is usually used in badminton singles, depending on the distance
@@ -303,45 +306,47 @@
     <hr>
     <h4 style="text-align: center; font-weight: bold;">Basic Foot Techniques</h4>
     <p>Having good footwork is important for you to understand. Because the leg movements are flexible when
-        playing badminton will make it easier for you to move positions; forward, backward, sideways, even jump
-        high to restore the shuttlecock serve to the opponent.</p>
+      playing badminton will make it easier for you to move positions; forward, backward, sideways, even jump
+      high to restore the shuttlecock serve to the opponent.</p>
     <p>In addition, basic leg movements are also important to control your balance in the field. Because if it
-        unbalanced, it is difficult to control the opponent's shots many times. Unexpected things will happen
-        if you do not have a right leg transfer pattern, such as an injury.</p>
-        <div class="row">
-          <div class="column">
-            <iframe width="100%" height="360" src="https://www.youtube.com/embed/lldqxIG7IkI"
-              title="Kemahiran Asas Badminton Pergerakan Kaki #2" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-          <div class="column">
-            <iframe width="100%" height="360" src="https://www.youtube.com/embed/1q1qknuCcdY"
-              title="kemahiran asas badminton Pergerakan kaki #3" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <hr>
-    <h5 style="color: red;">Attention: Students can learn about the technique of playing badminton based on the information
-        prepared using the main equipment.</h5>
+      unbalanced, it is difficult to control the opponent's shots many times. Unexpected things will happen
+      if you do not have a right leg transfer pattern, such as an injury.</p>
+    <div class="row">
+      <div class="column">
+        <iframe width="100%" height="360" src="https://www.youtube.com/embed/lldqxIG7IkI"
+          title="Kemahiran Asas Badminton Pergerakan Kaki #2" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="column">
+        <iframe width="100%" height="360" src="https://www.youtube.com/embed/1q1qknuCcdY"
+          title="kemahiran asas badminton Pergerakan kaki #3" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <hr>
+    <h5 style="color: red;">Attention: Students can learn about the technique of playing badminton based on the
+      information
+      prepared using the main equipment.</h5>
     <h5 style="text-align: center; font-weight: bold;">Main Equipment</h5>
     <div class="row">
       <div class="column">
         <img src="https://cf.shopee.com.my/file/b3620e31ce2ff0ff8a4094fe832f464d" alt="Racket" style="width:100%"
-          height="350">
+          height="250">
       </div>
       <div class="column">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREewK1HlC0z6JoRHlCy17H3-HmZ0wByK1Y1g&usqp=CAU"
-          alt="Bola" style="width:100%" height="350">
+          alt="Bola" style="width:100%" height="250">
       </div>
       <div class="column">
-        <img src="https://www.sportszoneintl.com/wp-content/uploads/2020/04/Badminton-Court-Mat-scaled-e1586422109904-1-1024x765.jpg"
-          alt="Gelanggang" style="width:100%" height="350">
+        <img
+          src="https://www.sportszoneintl.com/wp-content/uploads/2020/04/Badminton-Court-Mat-scaled-e1586422109904-1-1024x765.jpg"
+          alt="Gelanggang" style="width:100%" height="250">
       </div>
       <div class="column">
-        <img src="https://cf.shopee.com.my/file/ca7796031b288801e97224b9def56de7"
-          alt="Kasut" style="width:100%" height="350">
+        <img src="https://cf.shopee.com.my/file/ca7796031b288801e97224b9def56de7" alt="Kasut" style="width:100%"
+          height="250">
       </div>
     </div>
   </div>
@@ -349,10 +354,7 @@
 
 <footer>
   <p><b>Thank you for visit our website!</b></p>
-  <a
-    href="https://azread.github.io/MYBadminton/MY%20Badminton.html"
-    >Malay Version</a
-  >
+  <a href="https://azread.github.io/MYBadminton/MY%20Badminton.html">Malay Version</a>
 </footer>
 
 
